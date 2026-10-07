@@ -7,8 +7,10 @@
 std::string Chet(int x) {
     std::string result;
     for (int i = 0; i <= x; i += 2) {
+        if (!result.empty()) {
+            result += " ";
+        }
         result += std::to_string(i);
-    result += ", ";
     }
     return result;
 }
