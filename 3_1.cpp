@@ -8,9 +8,7 @@ std::string ListNums(int x) {
     std::string result;
     for (int i = 0; i <= x; ++i) {
         result += std::to_string(i);
-        if (i < x) {
-            result += ", ";
-        }
+        result += " ";
     }
     return result;
 }
